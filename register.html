@@ -1,0 +1,42 @@
+<html>
+    <title>Automobili</title>
+    <head>
+      <link rel="stylesheet" type="text/css" href="login.css">
+        <img src="Logo 2.jpg">
+    </head>
+
+    <body>
+        <form name="f1">
+            <fieldset>
+                <legend>
+                    Register Form
+                </legend>
+                <center>
+                    <p>Username : <br> </p>
+                    <input type="text" name="user"> <br>
+                    <p> Password : <br> </p>
+                    <input type="password" name="pass">
+                    <p> Email : <br> </p>
+                    <input type="email" name="email">
+                    <p> Zip Code : <br> </p>
+                    <input type="number" name="zip">
+                </center>
+                <br>
+                <div class="button-container">
+                    <center><input type="button" value="Sign-in" name="b1" id="signin"></center>
+                    <br>
+                </div>
+            </fieldset>
+        </form>
+
+        <script>
+            var signinButton = document.getElementById('signin');
+
+            signinButton.addEventListener('click', function() {
+
+                window.location.href = 'Language.html';
+            });
+
+        </script>
+    </body>
+</html>

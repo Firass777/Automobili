@@ -1,0 +1,52 @@
+img {
+    width: 1000px; 
+    position: absolute;
+    top: 80;
+    left: 380;
+    opacity: 0;
+    animation: fadeIn 4s forwards;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+body p {
+    color :aqua ;
+    position: absolute;
+    top : 550px ;
+    left : 550px ;
+    font-size: larger;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 1s;
+}
+
+input[name="b1"] {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 620px; 
+    right: 870px; 
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 1.5s;
+}
+
+
+input[name="b1"]:hover{
+    background-color: rgb(18, 157, 161);
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

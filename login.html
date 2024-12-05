@@ -1,0 +1,45 @@
+<html>
+    <title>Automobili</title>
+    <head>
+      <link rel="stylesheet" type="text/css" href="login.css">
+        <img src="Logo 2.jpg">
+    </head>
+
+    <body>
+        <form name="f1">
+            <fieldset>
+                <legend>
+                    Welcome Please Log in 
+                </legend>
+                <center>
+                    <p>Username : <br> </p>
+                    <input type="text" name="user"> <br>
+                    <p> Password : <br> </p>
+                    <input type="password" name="pass">
+                </center>
+                <br><br><br>
+                <div class="button-container">
+                    <center><input type="button" value="Login" name="b1" id="login-button"></center>
+                    <br>
+                    <center><p> If you dont have an account Please Press Here : </p></center>
+                    <center><input type="button" value="Register" name="b2" id="register-button"></center>
+                </div>
+            </fieldset>
+        </form>
+
+        <script>
+            var loginButton = document.getElementById('login-button');
+            var registerButton = document.getElementById('register-button');
+
+
+            loginButton.addEventListener('click', function() {
+
+                window.location.href = 'Language.html';
+            });
+
+            registerButton.addEventListener('click', function() {
+                window.location.href = 'register.html';
+            });
+        </script>
+    </body>
+</html>
